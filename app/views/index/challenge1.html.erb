@@ -2,7 +2,7 @@
 <h2><%= link_to "Click to return", index_path %></h2>
 <p>A user enters a string and you must return the string in reversed order to the user.</p>
 <%= form_tag("/index/challenge1", method: "get") do %>
-  <%= label_tag(:inputString, "Input a string:") %>
+  <%= label_tag(:inputString, "Enter a string to reverse:") %>
   <%= text_field_tag(:inputString) %>
   <%= submit_tag("Enter") %>
 <% end %>

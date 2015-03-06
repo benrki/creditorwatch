@@ -1,3 +1,11 @@
 <h1>Challenge 3</h1>
 <h2><%= link_to "Click to return", index_path %></h2>
 <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever since the 1500s. Build a replacement for lorem ipsum that is dynamic and more interesting.</p>
+<%= form_tag("/index/challenge3", method: "get") do %>
+  <%= label_tag(:inputString, "Enter word(s) (space separated) for the wordbank: ") %>
+  <%= text_field_tag(:inputString) %>
+  <%= submit_tag("Enter") %>
+<% end %>
+
+
+<%= @generatedText %>
