@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  get 'index/challenge1'
+
+  get 'index/challenge2'
+
+  get 'index/challenge3'
+
+  get 'index/view'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'index#view'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
