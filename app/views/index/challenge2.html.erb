@@ -1,3 +1,14 @@
 <h1>Challenge 2</h1>
 <h2><%= link_to "Click to return", index_path %></h2>
 <p>Insert dashes (‘-‘) between each two odd numbers in the number entered by a user. For example: if the number is 454793 the output should be 4547-9-3. Don’t count zero as an odd number.</p>
+<%= form_tag("/index/challenge2", method: "get") do %>
+  <%= label_tag(:inputString, "Input a string:") %>
+  <%= text_field_tag(:inputString) %>
+  <%= submit_tag("Enter") %>
+<% end %>
+
+<%= 
+	if params[:inputString]
+		
+	end
+ %>
