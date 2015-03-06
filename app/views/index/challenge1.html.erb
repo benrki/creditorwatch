@@ -1,2 +1,9 @@
 <h1>Index#challenge1</h1>
-<p>Find me in app/views/index/challenge1.html.erb</p>
+<p>A user enters a string and you must return the string in reversed order to the user.</p>
+<%= form_tag("/index/challenge1", method: "get") do %>
+  <%= label_tag(:inputString, "Input a string:") %>
+  <%= text_field_tag(:inputString) %>
+  <%= submit_tag("Enter") %>
+<% end %>
+
+<%= params[:inputString].reverse if params[:inputString] %>
